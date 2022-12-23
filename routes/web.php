@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('primos');
 });
+
+  Route::get('/primos','App\Http\Controllers\PrimosController@index')->name('primos.index');
+  
