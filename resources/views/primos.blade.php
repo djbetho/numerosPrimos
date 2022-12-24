@@ -23,7 +23,7 @@
                             <label   class="col-form-label">Numero</label>
                         </div>
                         <div class="col-auto">
-                            <input type="text" id="inputNumber"  name="inputNumber" >
+                            <input type="number" id="inputNumber"  name="inputNumber"  required>
                         </div>
                            <div class="col-auto">
                            <button type="submit" class="btn btn-primary">Calcular</button>
@@ -32,8 +32,17 @@
                     
                 </form>
                 <div class="row">
-                    <div class="col-2 text-truncate">
-                       {{ $result_Cal }} </p>
+                    <div class=" text-truncate">
+                         
+                        @isset($valor)
+                        @foreach($valor as $valores)
+                           {{ $valores }} -
+                       
+                    @endforeach
+                       
+                       @endisset
+                    
+                        </p>
                     </div>
                 </div>
             </div>
