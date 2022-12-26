@@ -1,8 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
+
 use Illuminate\Http\Request;
 
 class PrimosController extends Controller
